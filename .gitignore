@@ -1,0 +1,9 @@
+/typo3
+/typo3temp
+/uploads
+/typo3conf/LocalConfiguration.php
+/node_modules
+/vendor
+/bower_components
+.htaccess
+.sass-cache/
