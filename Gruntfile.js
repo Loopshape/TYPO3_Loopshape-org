@@ -101,7 +101,7 @@ module.exports = function(grunt) {
                     baseUrl : "<%= baseUrl %>",
                     name : "app",
                     mainConfigFile : "<%= baseUrl %>/main.js",
-                    out : "./public/script.min.js"
+                    out : "<%= baseUrl %>/script.min.js"
                 }
             }
         },
