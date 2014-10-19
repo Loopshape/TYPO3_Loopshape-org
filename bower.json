@@ -31,6 +31,7 @@
     "requirejs": "~2.1.15",
     "backbone": "~1.1.2",
     "lodash": "~2.4.1",
-    "greensock": "~1.14.1"
+    "greensock": "~1.14.1",
+    "font-awesome": "~4.2.0"
   }
 }
