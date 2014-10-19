@@ -1,0 +1,36 @@
+{
+  "name": "Loopshape Development Area",
+  "version": "0.1.0",
+  "homepage": "http://loopshape.org/",
+  "authors": [
+    "Arjuna Noorsanto <webmaster@loopshape.com>"
+  ],
+  "description": "Website for web development & media design",
+  "main": "index.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "web",
+    "development",
+    "media",
+    "design"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "foundation": "~5.4.6",
+    "jquery-migrate": "~1.2.1",
+    "requirejs": "~2.1.15",
+    "backbone": "~1.1.2",
+    "lodash": "~2.4.1",
+    "greensock": "~1.14.1"
+  }
+}
