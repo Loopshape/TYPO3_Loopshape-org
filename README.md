@@ -1,9 +1,3 @@
->> TYPO3_Loopshape-org
-=================================
-TYPO3 main system for ROOT domain
-
-+ + +
-
 This website is dedicated to webdesign and multimedia!
 
 Loopshape.org is my personal development server for creating and testing all kind of applications, which I found in the web and which could be usable for future reference.
@@ -15,5 +9,5 @@ I hope, you'll like this project as much as I do and maybe you've got the same i
 Kind regards 
 Arjuna Noorsanto, {Webmaster}
 
---
+
 (c)2012–2014 http://loopshape.org/
