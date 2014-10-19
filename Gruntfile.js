@@ -88,7 +88,7 @@ module.exports = function(grunt) {
                 },
                 files : [{
                     src : "<%= concat.js.dest %>",
-                    dest : "./public/script.min.js"
+                    dest : "./script.min.js"
                 }]
             }
 
