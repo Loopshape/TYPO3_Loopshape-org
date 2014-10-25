@@ -9,4 +9,5 @@
 /vendor
 /bower_components
 .htaccess
-.sass-cache/
+.sass-cache
+/owncloud
