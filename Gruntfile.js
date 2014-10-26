@@ -156,6 +156,24 @@ module.exports = function(grunt) {
             stuff : ["<%= cfg.tmp %>"]
         },
 
+        sshconfig : {
+            loopshape : {
+                host : 'loopshape.org',
+                username : 'root',
+                agent : process.env.SSH_AUTH_SOCK,
+                agentForward : true
+            }
+        },
+
+        sshexec : {
+            deploy : {
+                command : ['cd /server/website/production', 'git pull origin master', 'cd /server/website/data', 'git pull origin master'].join(' && '),
+                options : {
+                    config : 'loopshape'
+                }
+            }
+        },
+
         watch : {
             scripts : {
                 files : ["./main.js", "<%= cfg.app %>/app.js", "<%= cfg.app %>/class/**/*.js"],
@@ -186,6 +204,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-contrib-clean");
+    grunt.loadNpmTasks('grunt-ssh');
 
     // default task
     grunt.registerTask("default", "watch");
@@ -193,5 +212,8 @@ module.exports = function(grunt) {
     // register tasks
     grunt.registerTask("js", ["jshint", "requirejs"]);
     grunt.registerTask("css", ["jshint", "concat:css", "compass:compile", "cssmin", "clean"]);
+
+    // deploy task
+    grunt.registerTask("deploy", ["sshexec:deploy"]);
 
 };
